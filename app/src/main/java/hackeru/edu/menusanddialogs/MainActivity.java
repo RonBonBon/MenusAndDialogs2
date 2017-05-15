@@ -57,6 +57,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }).show();
     }
 
+
+    public void pickAColor(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        final String[] items = new String[]{"red", "green", "blue"};
+        builder.setTitle("Pick a color")
+                .setMessage("This app needs internet connection")
+                .setItems(items, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                }).show();
+    }
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
